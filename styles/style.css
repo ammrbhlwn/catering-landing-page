@@ -1,0 +1,308 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 8px;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*  ============================================ */
+
+/*  ============================================ */
+
+/*  ============================================ */
+
+/* Navigasi Bar */
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 4rem;
+  z-index: 1;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  padding: 2.5rem 5rem;
+  border-radius: 2.5rem;
+  background-color: rgba(48, 47, 47, 0.4);
+  backdrop-filter: blur(1.5rem);
+}
+
+.navbar > .nav-list {
+  display: flex;
+  gap: 4rem;
+  list-style-type: none;
+}
+
+.navbar > .nav-list > li a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: 0.05s ease-in-out;
+}
+
+.navbar .nav-list a:hover {
+  color: #ffc312;
+  font-weight: bold;
+}
+
+.open-menu {
+  color: black;
+  cursor: pointer;
+  font-size: 4rem;
+  display: none;
+}
+
+.close-menu {
+  position: absolute;
+  cursor: pointer;
+  font-size: 4rem;
+  display: none;
+  top: 60px;
+  right: 7rem;
+}
+
+#check {
+  display: none;
+}
+
+/*  ============================================ */
+
+/*  ============================================ */
+
+/*  ============================================ */
+
+/* jumbotron */
+
+.jumbotron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("/img/banner.png");
+  background-size: cover;
+}
+
+.jumbotron > .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3.5rem;
+  color: white;
+}
+
+.jumbotron > .content > h1 {
+  font-size: 7rem;
+}
+
+.jumbotron > .content > p {
+  line-height: 4rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.jumbotron > .content > .button {
+  font-family: "Quicksand", sans-serif;
+  border: 0.3rem solid #ffc312;
+  border-radius: 1.5rem;
+  width: fit-content;
+  padding: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffc312;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.jumbotron > .content > .button:hover {
+  background-color: #ffc312;
+  color: white;
+}
+
+/*  ============================================ */
+
+/*  ============================================ */
+
+/*  ============================================ */
+
+/* profile */
+
+.profile-group {
+  display: flex;
+  /* flex-wrap: wrap; */
+  padding: 15rem 12rem;
+  gap: 2rem;
+}
+
+.program {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-block: 5rem;
+  gap: 8rem;
+  align-items: center;
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.2rem 2rem rgba(8, 8, 8, 0.201);
+}
+
+.program > h2 {
+  font-size: 4.5rem;
+  text-align: center;
+  line-height: 7rem;
+  border-bottom: 0.8rem solid #ffc312;
+}
+
+.program > .card {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 3rem;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.program > .card .featured-image {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.program > .card > section {
+  padding-inline: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  border-radius: 1.5rem;
+  border: 0.5rem solid #e85c0d;
+  padding-block: 6rem;
+  width: 44rem;
+  height: 44rem;
+  align-items: center;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.program > .card > section:hover {
+  transform: scale(1.03);
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  height: fit-content;
+  width: 25%;
+  padding: 3rem;
+  box-shadow: 0.2rem 0.2rem 2rem rgba(8, 8, 8, 0.201);
+  border-radius: 1.3rem;
+}
+
+aside > h3 {
+  width: fit-content;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 0.5rem solid #ffb22c;
+}
+
+.populer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.populer > a {
+  text-decoration: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: rgb(0, 0, 0);
+  border-bottom: 0.5rem solid #08080834;
+}
+
+.populer > a:hover {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border-bottom: none;
+  background-color: #ffb22c;
+}
+/*  ============================================ */
+
+/*  ============================================ */
+
+/*  ============================================ */
+
+/* program */
+
+/*  ============================================ */
+
+/*  ============================================ */
+
+/*  ============================================ */
+
+/* footer */
+
+footer {
+  background-color: #ffb22c;
+  display: flex;
+  flex-direction: column;
+}
+
+.info h4 {
+  color: #080808;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.info a,
+.info p {
+  text-decoration: none;
+  color: #373737;
+  font-size: 2rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-block: 8rem;
+}
+
+footer > .bottom {
+  background-color: #eb5b00;
+  width: 100%;
+}
+
+footer > .bottom p {
+  text-align: center;
+  color: #1b1b1b;
+  font-size: 2rem;
+  padding: 1rem;
+}

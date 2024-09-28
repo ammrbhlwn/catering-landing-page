@@ -1,0 +1,114 @@
+@media screen and (max-width: 768px) {
+  /* =============================== */
+
+  /* navbar */
+  .navigation {
+    position: fixed;
+    display: flex;
+    padding-block: 0;
+    z-index: 1;
+    justify-content: right;
+  }
+
+  .navbar {
+    top: 4rem;
+    border-radius: 0;
+    backdrop-filter: none;
+    background-color: rgba(48, 47, 47, 0);
+  }
+
+  .navbar > .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+    justify-content: center;
+    /* padding-inline: 10rem; */
+    width: fit-content;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 2;
+    background-color: #002147;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    width: 300px;
+  }
+
+  .navbar > .nav-list > li a,
+  .navbar > .nav-list > .close-menu,
+  .navbar > .open-menu {
+    color: white;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+
+  #check:checked ~ .nav-list {
+    right: 0;
+  }
+  /* =============================== */
+
+  /* =============================== */
+
+  /* jumbotron */
+
+  .jumbotron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-inline: 6rem;
+  }
+
+  .jumbotron > .content > h1 {
+    font-size: 4rem;
+  }
+
+  .jumbotron > .content > p {
+    font-size: 2.5rem;
+  }
+
+  /* =============================== */
+
+  /* =============================== */
+
+  aside {
+    width: 100%;
+  }
+  /* profile */
+
+  .profile-group {
+    flex-flow: column wrap;
+    padding: 6rem;
+  }
+
+  .profile {
+    gap: 5rem;
+  }
+
+  .profile > h4 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+  .profile > .description {
+    text-indent: 2rem;
+  }
+
+  /* =============================== */
+
+  /* =============================== */
+
+  /* program */
+
+  .program {
+    padding-inline: 6rem;
+  }
+
+  .program > .card > section {
+    width: 100%;
+  }
+}

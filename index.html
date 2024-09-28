@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMP Merah Putih</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/media-query.css" />
+
+    <!-- font roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font quicksand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- menu -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <header class="navigation">
+      <nav class="navbar">
+        <input type="checkbox" id="check" />
+        <ul class="nav-list">
+          <li><a href="#jumbotron">Beranda</a></li>
+          <li><a href="#menu">Daftar Masakan</a></li>
+          <li><a href="#">Katering</a></li>
+          <li><a href="#">Tentang</a></li>
+          <li><a href="#footer">Kontak</a></li>
+          <label for="check" class="close-menu"
+            ><i class="fas fa-times"></i
+          ></label>
+        </ul>
+        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+      </nav>
+    </header>
+
+    <main>
+      <!-- jumbotron -->
+      <section id="jumbotron" class="jumbotron">
+        <div class="content">
+          <h1>Selamat Datang di Warung Kane</h1>
+          <p>
+            Temukan kenikmatan di setiap gigitan. <br />
+            Segera datang dan rasakan pengalaman kuliner yang tak terlupakan!
+          </p>
+          <a href="#menu" class="button">Lihat Menu</a>
+        </div>
+      </section>
+
+      <!-- profile -->
+      <section class="profile-group">
+        <article id="menu" class="program">
+          <h2>Menu Makanan</h2>
+
+          <div class="card">
+            <section>
+              <h3>Nasi Goreng</h3>
+              <img
+                src="img/nasgor.png"
+                alt="International Class"
+                class="featured-image"
+              />
+            </section>
+
+            <section>
+              <h3>Bakso</h3>
+              <img
+                src="img/bakso.jpg"
+                alt="Boarding Class"
+                class="featured-image"
+              />
+            </section>
+
+            <section>
+              <h3>Soto Ayam</h3>
+              <img
+                src="img/sotoayam.jpg"
+                alt="Entrepreneur Class"
+                class="featured-image"
+              />
+            </section>
+
+            <section>
+              <h3>Ayam Geprek</h3>
+              <img
+                src="img/sate.jpeg"
+                alt="Entrepreneur Class"
+                class="featured-image"
+              />
+            </section>
+          </div>
+        </article>
+
+        <aside>
+          <h3>Makanan Populer</h3>
+
+          <div class="populer">
+            <a href="">Soto Ayam</a>
+            <a href="">Sate Ayam</a>
+            <a href="">Bakso</a>
+            <a href="">Ayam Bakar</a>
+            <a href="">Rendang</a>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="info">
+        <h4>Warung Kane</h4>
+        <p>Alamat: Jl. Keputih, Surabaya, Indonesia</p>
+        <p>Telp: +62812345678</p>
+        <p>Email: <a href="#">warungkane@gmail.com</a></p>
+      </div>
+      <section class="bottom">
+        <p>Copyright &#169; 2024 Warung Kane</p>
+      </section>
+    </footer>
+  </body>
+</html>
